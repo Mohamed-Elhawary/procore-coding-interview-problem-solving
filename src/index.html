@@ -8,7 +8,7 @@
     <div id="app">
       <h1>Procore Coding Interview - Problem Solving</h1>
       <section id="problem_1" class="problem">
-        <h2>#Problem 1:</h2>
+        <h2>Problem #1: Project Overlap Checker</h2>
         <p>
           <b>Problem:</b>
           Given a list of project objects, each with a startDate and endDate,
@@ -16,20 +16,34 @@
         </p>
         <p>
           <b>Explanation:</b>
-          Two projects overlap if the start date of one is before the end date
-          of another and vice versa.
+          Two projects are considered to overlap if:
+
+          <ul>
+            <li>         
+               The start date of one project is <b>before</b> the end date of another project.
+            </li>
+            <li>
+              The end date of the first project is <b>after</b> the start date of the other project.
+            </li>
+          </ul>
         </p>
         <p>
           <b>Input:</b>
+          An array of project objects, for example:
           <pre><code class="language-javascript">const projects = [
   { name: "A", startDate: "2024-05-01", endDate: "2024-05-10" },
   { name: "B", startDate: "2024-05-09", endDate: "2024-05-20" },
 ];
 </code></pre>
         </p>
-        <p id="problem_1_sol"></p>
+        <p>
+          <b>Output:</b>
+The function should return true if any projects overlap, and false otherwise.
+        </p>
       </section>
     </div>
     <script src="./index.mjs" type="module"></script>
+    <script src="./solutions/problem-1.js"></script>
+    <script src="./solutions/problem-2.js"></script>
   </body>
 </html>

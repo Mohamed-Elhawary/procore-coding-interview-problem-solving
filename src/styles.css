@@ -11,10 +11,11 @@ h1 {
 
 p {
   font-size: 14px;
-  color: grey;
+  color: gray;
 }
 
-p b {
+p b,
+div b {
   color: goldenrod;
 }
 
@@ -24,4 +25,13 @@ p b {
   border-radius: 20px;
   margin-bottom: 12px;
   overflow: auto;
+}
+
+code {
+  border-radius: 10px;
+}
+
+ul li,
+li b {
+  color: #18181b;
 }
