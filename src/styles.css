@@ -35,3 +35,14 @@ ul li {
   color: #777;
   font-weight: 400;
 }
+
+.position-title {
+  display: block;
+  margin: auto;
+  margin-block: 20px;
+  padding: 8px;
+  border-radius: 10px;
+  background: hsla(100, 23, 30, 0.7);
+  width: fit-content;
+  color: #fff;
+}
