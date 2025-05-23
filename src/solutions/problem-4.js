@@ -18,3 +18,19 @@ const phases = [
 ];
 
 console.log("Problem #4 Output:", prepareGanttData(phases));
+/* 
+[
+  {
+      "name": "Excavation",
+      "startDate": "2024-05-01",
+      "endDate": "2024-05-03",
+      "duration": 3
+  },
+  {
+      "name": "Construction",
+      "startDate": "2024-06-04",
+      "endDate": "2024-09-02",
+      "duration": 91
+  }
+]
+*/

@@ -7,7 +7,7 @@
   <body>
     <div id="app">
       <h1>Procore Coding Interview - Problem Solving</h1>
-      
+            
       <!-- Problem 1 -->
       <section id="problem_1" class="problem">
         <h2>Problem #1: Project Overlap Checker</h2>
@@ -157,6 +157,31 @@ const threshold = 100;</code></pre>
           An object mapping each <code>workerId</code> to the total hours they worked.
         </p>
       </section>
+
+      <!-- Problem 6 -->
+      <section id="problem_6" class="problem">
+        <h2>Problem #6: Document Approval Workflow</h2>
+        <p>
+          <b>Problem:</b>
+          Determine document approval status from a sequence of approvals.
+        </p>
+        <p>
+          <b>Explanation:</b>
+          <ul>
+            <li>If any approval step is `"rejected"`, the status is `"rejected"`.</li>
+            <li>If all steps are `"approved"`, the status is `"approved"`.</li>
+            <li>Otherwise, the status is `"pending"`.</li>
+          </ul>
+        </p>
+        <p>
+          <b>Input:</b>
+          <pre><code class="language-javascript">const approvalSteps = ["approved", "pending", "approved"];</code></pre>
+        </p>
+        <p>
+          <b>Output:</b>
+          A string: either <code>"approved"</code>, <code>"pending"</code>, or <code>"rejected"</code>.
+        </p>
+      </section>
     </div>
     <script src="./index.mjs" type="module"></script>
     <script src="./solutions/problem-1.js"></script>
@@ -164,5 +189,6 @@ const threshold = 100;</code></pre>
     <script src="./solutions/problem-3.js"></script>
     <script src="./solutions/problem-4.js"></script>
     <script src="./solutions/problem-5.js"></script>
+    <script src="./solutions/problem-6.js"></script>
   </body>
 </html>

@@ -14,4 +14,4 @@ const logs = [
   { workerId: 2, hoursWorked: 5, date: "2024-05-01" },
 ];
 
-console.log("Problem #5 Output:", summarizeWorkerHours(logs));
+console.log("Problem #5 Output:", summarizeWorkerHours(logs)); // { 1: 12, 2: 5}

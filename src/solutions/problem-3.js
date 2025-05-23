@@ -13,4 +13,4 @@ const inventory = [
   { name: "Bricks", quantity: 200 },
 ];
 
-console.log("Problem #3 Output:", lowStockMaterials(inventory, 100));
+console.log("Problem #3 Output:", lowStockMaterials(inventory, 100)); // ["Cement"]
