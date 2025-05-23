@@ -64,9 +64,37 @@ const workers = [
           If no worker is available for a task, indicate that the task is unassigned (e.g., by assigning null).
         </p>
       </section>
+      
+      <!-- Problem 3 -->
+      <section id="problem_3" class="problem">
+        <h2>Problem #3: Materials Stock Alert</h2>
+        <p><b>Problem:</b>
+          Return all materials whose quantity is below a given threshold.
+        </p>
+        <p><b>Explanation:</b>
+          <ul>
+            <li>Loop through the inventory.</li>
+            <li>If a material's quantity is less than the threshold, include its name in the result.</li>
+          </ul>
+        </p>
+        <p><b>Input:</b>
+          An array of inventory items and a threshold, for example:
+          <pre><code class="language-javascript">const inventory = [
+  { name: "Cement", quantity: 40 },
+  { name: "Bricks", quantity: 200 },
+];
+const threshold = 100;</code></pre>
+        </p>
+        <p><b>Output:</b>
+          An array of material names whose quantity is below the threshold.
+        </p>
+      </section>
+
+
     </div>
     <script src="./index.mjs" type="module"></script>
     <script src="./solutions/problem-1.js"></script>
     <script src="./solutions/problem-2.js"></script>
+    <script src="./solutions/problem-3.js"></script>
   </body>
 </html>
