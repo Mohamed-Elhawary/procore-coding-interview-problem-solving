@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Procore Coding Interview - Problem Solving</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+  </head>
+  <body>
+    <div id="app">
+      <h1>Procore Coding Interview - Problem Solving</h1>
+      <section id="problem_1" class="problem">
+        <h2>#Problem 1:</h2>
+        <p>
+          <b>Problem:</b>
+          Given a list of project objects, each with a startDate and endDate,
+          write a function to check if any projects overlap in time.
+        </p>
+        <p>
+          <b>Explanation:</b>
+          Two projects overlap if the start date of one is before the end date
+          of another and vice versa.
+        </p>
+        <p>
+          <b>Input:</b>
+          <pre><code class="language-javascript">const projects = [
+  { name: "A", startDate: "2024-05-01", endDate: "2024-05-10" },
+  { name: "B", startDate: "2024-05-09", endDate: "2024-05-20" },
+];
+</code></pre>
+        </p>
+        <p id="problem_1_sol"></p>
+      </section>
+    </div>
+    <!-- Load Highlight.js after the code blocks -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="./index.mjs" type="module"></script>
+  </body>
+</html>
