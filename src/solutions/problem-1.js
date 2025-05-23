@@ -21,4 +21,4 @@ const projects = [
   { name: "D", startDate: "2024-06-03", endDate: "2024-06-20" },
 ];
 
-console.log(hasOverlappingProjects(projects)); // true
+console.log("Problem #1 Output:", hasOverlappingProjects(projects)); // true

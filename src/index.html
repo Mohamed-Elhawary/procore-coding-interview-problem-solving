@@ -7,38 +7,61 @@
   <body>
     <div id="app">
       <h1>Procore Coding Interview - Problem Solving</h1>
+      
+      <!-- Problem 1 -->
       <section id="problem_1" class="problem">
         <h2>Problem #1: Project Overlap Checker</h2>
-        <p>
-          <b>Problem:</b>
-          Given a list of project objects, each with a startDate and endDate,
-          write a function to check if any projects overlap in time.
+        <p><b>Problem:</b>
+          Given a list of project objects, each with a startDate and endDate, write a function to check if any projects overlap in time.
         </p>
-        <p>
-          <b>Explanation:</b>
+        <p><b>Explanation:</b>
           Two projects are considered to overlap if:
-
           <ul>
-            <li>         
-               The start date of one project is <b>before</b> the end date of another project.
-            </li>
-            <li>
-              The end date of the first project is <b>after</b> the start date of the other project.
-            </li>
+              <li>The start date of one project is before the end date of another project.</li>
+              <li>The end date of the first project is after the start date of the other project.</li>
           </ul>
         </p>
-        <p>
-          <b>Input:</b>
+        <p><b>Input:</b>
           An array of project objects, for example:
           <pre><code class="language-javascript">const projects = [
   { name: "A", startDate: "2024-05-01", endDate: "2024-05-10" },
   { name: "B", startDate: "2024-05-09", endDate: "2024-05-20" },
-];
-</code></pre>
+];</code></pre>
         </p>
-        <p>
-          <b>Output:</b>
-The function should return true if any projects overlap, and false otherwise.
+        <p><b>Output:</b>
+          The function should return <code>true</code> if any projects overlap, and <code>false</code> otherwise.
+        </p>
+      </section>
+      
+      <!-- Problem 2 -->
+      <section id="problem_2" class="problem">
+        <h2>Problem #2: Resource Allocation</h2>
+        <p><b>Problem:</b>
+          Assign each task to a worker who has the required skill.
+        </p>
+        <p><b>Explanation:</b>
+          <ul>
+            <li>Each task has a requiredSkill.</li>
+            <li>Each worker has a skills array (the set of skills they possess).</li>
+            <li>Your goal is to map each task to a worker who has the skill required for that task.</li>
+            <li>If no worker is available for a task, indicate that the task is unassigned.</li>
+          </ul>
+        </p>
+        <p><b>Input:</b>
+          An array of tasks and workers, for example:
+          <pre><code class="language-javascript">const tasks = [
+  { id: 1, name: "Welding", requiredSkill: "welding" },
+  { id: 2, name: "Painting", requiredSkill: "painting" },
+];
+const workers = [
+  { id: 1, name: "Alice", skills: ["welding", "carpentry"] },
+  { id: 2, name: "Bob", skills: ["painting"] },
+];</code></pre>
+        </p>
+        <p><b>Output:</b>
+          A mapping of each task to a worker who has the required skill.
+          If multiple workers have the required skill, you can assign any of them.
+          If no worker is available for a task, indicate that the task is unassigned (e.g., by assigning null).
         </p>
       </section>
     </div>
