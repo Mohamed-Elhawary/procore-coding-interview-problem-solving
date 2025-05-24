@@ -1,4 +1,4 @@
-# Procore Coding Interview - Problem-Solving
+# Procore Coding Interview - Problem Solving
 
 #### Position: Software Engineer II - Frontend
 
