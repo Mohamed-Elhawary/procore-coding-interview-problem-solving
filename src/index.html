@@ -214,6 +214,35 @@ const threshold = 100;</code></pre>
           An array of task ids in a valid execution order.
         </p>
       </section>
+
+      <!-- Problem 8 -->
+      <section id="problem_8" class="problem">
+        <h2>Problem #8: Cost Calculation</h2>
+        <p>
+          <b>Problem:</b>
+          Return the total cost and per-category cost from a list of project expenses.
+        </p>
+        <p>
+          <b>Explanation:</b>
+          <ul>
+            <li>Add up the <code>amount</code> for all expenses to get the total.</li>
+            <li>For each <code>category</code>, sum up its total as well.</li>
+          </ul>
+        </p>
+        <p>
+          <b>Input:</b>
+          An array of expenses, for example:
+          <pre><code class="language-javascript">const expenses = [
+  { category: "Materials", amount: 100 },
+  { category: "Labor", amount: 200 },
+  { category: "Materials", amount: 50 },
+];</code></pre>
+        </p>
+        <p>
+          <b>Output:</b>
+          An object: <pre><code>{ total, byCategory }</code></pre>Example: <pre><code>{ total: 350, byCategory: { Materials: 150, Labor: 200 } }</code></pre>
+        </p>
+      </section>
     </div>
     <script src="./index.mjs" type="module"></script>
     <script src="./solutions/problem-1.js"></script>
@@ -223,5 +252,6 @@ const threshold = 100;</code></pre>
     <script src="./solutions/problem-5.js"></script>
     <script src="./solutions/problem-6.js"></script>
     <script src="./solutions/problem-7.js"></script>
+    <script src="./solutions/problem-8.js"></script>
   </body>
 </html>
