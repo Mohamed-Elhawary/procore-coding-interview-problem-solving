@@ -185,6 +185,35 @@ const threshold = 100;</code></pre>
           A string: either <code>"approved"</code>, <code>"pending"</code>, or <code>"rejected"</code>.
         </p>
       </section>
+
+      <!-- Problem 7 -->
+      <section id="problem_7" class="problem">
+        <h2>Problem #7: Task Dependencies (Topological Sort)</h2>
+        <p>
+          <b>Problem:</b>
+          Return a valid execution order for tasks given their dependencies.
+        </p>
+        <p>
+          <b>Explanation:</b>
+          <ul>
+            <li>Each task has a list of <code>dependsOn</code> task ids.</li>
+            <li>Return an array with a valid order for executing all tasks (topological sort).</li>
+          </ul>
+        </p>
+        <p>
+          <b>Input:</b>
+          An array of tasks, for example:
+          <pre><code class="language-javascript">const tasks = [
+    { id: 'A', dependsOn: ['B', 'C'] },
+    { id: 'B', dependsOn: ['C']},
+    { id: 'C', dependsOn: []},
+];</code></pre>
+        </p>
+        <p>
+          <b>Output:</b>
+          An array of task ids in a valid execution order.
+        </p>
+      </section>
     </div>
     <script src="./index.mjs" type="module"></script>
     <script src="./solutions/problem-1.js"></script>
@@ -193,5 +222,6 @@ const threshold = 100;</code></pre>
     <script src="./solutions/problem-4.js"></script>
     <script src="./solutions/problem-5.js"></script>
     <script src="./solutions/problem-6.js"></script>
+    <script src="./solutions/problem-7.js"></script>
   </body>
 </html>
