@@ -462,6 +462,35 @@ const existingProjects = [ { name: "Project Y" } ];</code></pre>
 }</code></pre>
         </p>
       </section>
+
+      <!-- Problem 16 -->
+      <section id="problem_16" class="problem">
+        <h2>Problem #16: Attachment File Type Filter</h2>
+        <p>
+          <b>Problem:</b>
+          Given a list of file attachments, filter out files that are not allowed (e.g., only PDFs and images).
+        </p>
+        <p>
+          <b>Explanation:</b>
+          <ul>
+            <li>Given an allowed set of file extensions, return only allowed files.</li>
+          </ul>
+        </p>
+        <p>
+          <b>Input:</b>
+          <pre><code class="language-javascript">const files = [
+  { name: "plan.pdf" },
+  { name: "photo.jpg" },
+  { name: "archive.zip" }
+];
+
+const allowedTypes = [".pdf", ".jpg", ".png"];</code></pre>
+        </p>
+        <p>
+          <b>Output:</b>
+          <pre><code class="language-javascript">[ { name: "plan.pdf" }, { name: "photo.jpg" } ]</code></pre>
+        </p>
+      </section>
     </div>
     <script src="./index.mjs" type="module"></script>
     <script src="./solutions/problem-1.js"></script>
@@ -479,5 +508,6 @@ const existingProjects = [ { name: "Project Y" } ];</code></pre>
     <script src="./solutions/problem-13.js"></script>
     <script src="./solutions/problem-14.js"></script>
     <script src="./solutions/problem-15.js"></script>
+    <script src="./solutions/problem-16.js"></script>
   </body>
 </html>
