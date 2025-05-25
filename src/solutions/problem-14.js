@@ -18,19 +18,26 @@ function validateProject(formData, existingProjects) {
   return { valid: errors.length === 0, errors };
 }
 
-const formData = {
+const formData1 = {
   name: "Project X",
+  startDate: "2024-06-01",
+  endDate: "2024-06-10",
+};
+
+const formData2 = {
+  name: "Project Y",
   startDate: "2024-06-01",
   endDate: "2024-06-10",
 };
 
 const existingProjects = [{ name: "Project Y" }];
 
-console.log("Problem #14 Output:", validateProject(formData, existingProjects));
+console.log(
+  "Problem #14 Output_1:",
+  validateProject(formData1, existingProjects)
+); // { valid: true, errors: [] }
 
-/*
-  [ 
-    { room: "101", startTime: "09:30", endTime: "11:00" },
-    { room: "101", startTime: "09:45", endTime: "10:15" }
-  ]
-  */
+console.log(
+  "Problem #14 Output_2:",
+  validateProject(formData2, existingProjects)
+); // { valid: false, errors: "Name is not unique" }
