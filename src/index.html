@@ -282,6 +282,35 @@ const newTasks = [
 ]</code></pre>
         </p>
       </section>
+
+      <!-- Problem 10 -->
+<section id="problem_10" class="problem">
+  <h2>Problem #10: RFIs (Request For Information) Status Report</h2>
+  <p>
+    <b>Problem:</b>
+    Given a list of RFIs, count how many are open, closed, or pending.
+  </p>
+  <p>
+    <b>Explanation:</b>
+    <ul>
+      <li>Each RFI has a <code>status</code> ("open", "closed", "pending").</li>
+      <li>Return an object with a count for each status.</li>
+    </ul>
+  </p>
+  <p>
+    <b>Input:</b>
+    <pre><code class="language-javascript">const rfis = [
+  { id: 1, status: "open" },
+  { id: 2, status: "pending" },
+  { id: 3, status: "closed" },
+  { id: 4, status: "open" }
+];</code></pre>
+  </p>
+  <p>
+    <b>Output:</b>
+    <pre><code class="language-javascript">{ open: 2, pending: 1, closed: 1 }</code></pre>
+  </p>
+</section>
     </div>
     <script src="./index.mjs" type="module"></script>
     <script src="./solutions/problem-1.js"></script>
@@ -293,5 +322,6 @@ const newTasks = [
     <script src="./solutions/problem-7.js"></script>
     <script src="./solutions/problem-8.js"></script>
     <script src="./solutions/problem-9.js"></script>
+    <script src="./solutions/problem-10.js"></script>
   </body>
 </html>
