@@ -9,6 +9,7 @@
       <h1>Procore Coding Interview - Problem Solving</h1>
       <span class="position-title">Position: Software Engineer II - Frontend</span>
       <span class="content-title">20 Problems in JavaScript</span>
+
       <!-- Problem 1 -->
       <section id="problem_1" class="problem">
         <h2>Problem #1: Project Overlap Checker</h2>
@@ -243,6 +244,44 @@ const threshold = 100;</code></pre>
           An object: <pre><code>{ total, byCategory }</code></pre>Example: <pre><code>{ total: 350, byCategory: { Materials: 150, Labor: 200 } }</code></pre>
         </p>
       </section>
+
+      <!-- Problem 9 -->
+      <section id="problem_9" class="problem">
+        <h2>Problem #9: Change Order Tracking</h2>
+        <p>
+          <b>Problem:</b>
+          Compare two versions of a project’s task list and return an array of changes: which tasks were added, removed, or modified.
+        </p>
+        <p>
+          <b>Explanation:</b>
+          <ul>
+            <li>Receive two arrays (old and new task lists). Each task has a unique <code>id</code>.</li>
+            <li>If a task appears in the new list but not in the old, it’s "added".</li>
+            <li>If it’s in the old but not the new, it’s "removed".</li>
+            <li>If the <code>id</code> exists in both, but some properties (e.g. <code>name</code> or <code>status</code>) changed, it’s "modified".</li>
+          </ul>
+        </p>
+        <p>
+          <b>Input:</b>
+          <pre><code class="language-javascript">const oldTasks = [
+      { id: 1, name: "Survey", status: "complete" },
+      { id: 2, name: "Excavate", status: "pending" }
+];
+
+const newTasks = [
+      { id: 2, name: "Excavate", status: "complete" },
+      { id: 3, name: "Pour Concrete", status: "pending" }
+];</code></pre>
+        </p>
+        <p>
+          <b>Output:</b>
+          <pre><code class="language-javascript">[
+    { type: "removed", task: { id: 1, name: "Survey", status: "complete" } },
+    { type: "modified", task: { id: 2, name: "Excavate", status: "complete" } },
+    { type: "added", task: { id: 3, name: "Pour Concrete", status: "pending" } }
+]</code></pre>
+        </p>
+      </section>
     </div>
     <script src="./index.mjs" type="module"></script>
     <script src="./solutions/problem-1.js"></script>
@@ -253,5 +292,6 @@ const threshold = 100;</code></pre>
     <script src="./solutions/problem-6.js"></script>
     <script src="./solutions/problem-7.js"></script>
     <script src="./solutions/problem-8.js"></script>
+    <script src="./solutions/problem-9.js"></script>
   </body>
 </html>
