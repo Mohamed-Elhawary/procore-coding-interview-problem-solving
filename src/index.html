@@ -264,13 +264,13 @@ const threshold = 100;</code></pre>
         <p>
           <b>Input:</b>
           <pre><code class="language-javascript">const oldTasks = [
-      { id: 1, name: "Survey", status: "complete" },
-      { id: 2, name: "Excavate", status: "pending" }
+    { id: 1, name: "Survey", status: "complete" },
+    { id: 2, name: "Excavate", status: "pending" }
 ];
 
 const newTasks = [
-      { id: 2, name: "Excavate", status: "complete" },
-      { id: 3, name: "Pour Concrete", status: "pending" }
+    { id: 2, name: "Excavate", status: "complete" },
+    { id: 3, name: "Pour Concrete", status: "pending" }
 ];</code></pre>
         </p>
         <p>
@@ -300,11 +300,11 @@ const newTasks = [
         <p>
           <b>Input:</b>
           <pre><code class="language-javascript">const rfis = [
-        { id: 1, status: "open" },
-        { id: 2, status: "pending" },
-        { id: 3, status: "closed" },
-        { id: 4, status: "open" }
-      ];</code></pre>
+    { id: 1, status: "open" },
+    { id: 2, status: "pending" },
+    { id: 3, status: "closed" },
+    { id: 4, status: "open" }
+];</code></pre>
         </p>
         <p>
           <b>Output:</b>
@@ -329,15 +329,44 @@ const newTasks = [
         <p>
           <b>Input:</b>
           <pre><code class="language-javascript">const actions = [
-        { name: "edit", roles: ["admin", "editor"] },
-        { name: "view", roles: ["admin", "editor", "viewer"] },
-        { name: "delete", roles: ["admin"] }
-      ];
-      const userRole = "editor";</code></pre>
+    { name: "edit", roles: ["admin", "editor"] },
+    { name: "view", roles: ["admin", "editor", "viewer"] },
+    { name: "delete", roles: ["admin"] }
+];
+
+const userRole = "editor";</code></pre>
         </p>
         <p>
           <b>Output:</b>
           <pre><code class="language-javascript">[ { name: "edit", ... }, { name: "view", ... } ]</code></pre>
+        </p>
+      </section>
+
+      <!-- Problem 12 -->
+      <section id="problem_12" class="problem">
+        <h2>Problem #12: Duplicate Document Detection</h2>
+        <p>
+          <b>Problem:</b>
+          Given a list of document file names and hashes, detect and return duplicates.
+        </p>
+        <p>
+          <b>Explanation:</b>
+          <ul>
+            <li>If two documents have the same hash, they’re duplicates.</li>
+            <li>Return an array of duplicate file names.</li>
+          </ul>
+        </p>
+        <p>
+          <b>Input:</b>
+          <pre><code class="language-javascript">const documents = [
+    { name: "plan1.pdf", hash: "abc123" },
+    { name: "plan2.pdf", hash: "def456" },
+    { name: "plan1_copy.pdf", hash: "abc123" }
+];</code></pre>
+        </p>
+        <p>
+          <b>Output:</b>
+          <pre><code class="language-javascript">[ "plan1_copy.pdf" ]</code></pre>
         </p>
       </section>
     </div>
@@ -353,5 +382,6 @@ const newTasks = [
     <script src="./solutions/problem-9.js"></script>
     <script src="./solutions/problem-10.js"></script>
     <script src="./solutions/problem-11.js"></script>
+    <script src="./solutions/problem-12.js"></script>
   </body>
 </html>
