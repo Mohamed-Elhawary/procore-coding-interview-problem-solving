@@ -1,4 +1,4 @@
-# Task Dependencies (Topological Sort)
+# Problem #7: Task Dependencies (Topological Sort)
 
 ## Problem
 
@@ -15,9 +15,9 @@ An array of tasks, for example:
 
 ```js
 const tasks = [
-  { id: 'A', dependsOn: ['B', 'C']},
-  { id: 'B', dependsOn: ['C']},
-  { id: 'C', dependsOn: []},
+  { id: "A", dependsOn: ["B", "C"] },
+  { id: "B", dependsOn: ["C"] },
+  { id: "C", dependsOn: [] },
 ];
 ```
 
