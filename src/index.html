@@ -369,6 +369,39 @@ const userRole = "editor";</code></pre>
           <pre><code class="language-javascript">[ "plan1_copy.pdf" ]</code></pre>
         </p>
       </section>
+
+      <!-- Problem 13 -->
+      <section id="problem_13" class="problem">
+        <h2>Problem #13: Meeting Scheduling Conflicts</h2>
+        <p>
+          <b>Problem:</b>
+          Given a set of meeting times and room assignments, check for double-bookings.
+        </p>
+        <p>
+          <b>Explanation:</b>
+          <ul>
+            <li>Each meeting has a <code>room</code>, <code>startTime</code>, and <code>endTime</code>.</li>
+            <li>Return a list of meetings that overlap in the same room.</li>
+          </ul>
+        </p>
+        <p>
+          <b>Input:</b>
+          <pre><code class="language-javascript">const meetings = [
+    { room: "101", startTime: "09:00", endTime: "10:00" },
+    { room: "101", startTime: "09:30", endTime: "11:00" },
+    { room: "102", startTime: "09:00", endTime: "10:00" },
+    { room: "101", startTime: "11:00", endTime: "12:00" },
+    { room: "101", startTime: "09:45", endTime: "10:15" }
+];</code></pre>
+        </p>
+        <p>
+          <b>Output:</b>
+          <pre><code class="language-javascript">[ 
+    { room: "101", startTime: "09:30", endTime: "11:00" },
+    { room: "101", startTime: "09:45", endTime: "10:15" }
+]</code></pre>
+        </p>
+      </section>
     </div>
     <script src="./index.mjs" type="module"></script>
     <script src="./solutions/problem-1.js"></script>
@@ -383,5 +416,6 @@ const userRole = "editor";</code></pre>
     <script src="./solutions/problem-10.js"></script>
     <script src="./solutions/problem-11.js"></script>
     <script src="./solutions/problem-12.js"></script>
+    <script src="./solutions/problem-13.js"></script>
   </body>
 </html>
