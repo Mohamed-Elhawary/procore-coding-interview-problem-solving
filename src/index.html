@@ -402,6 +402,34 @@ const userRole = "editor";</code></pre>
 ]</code></pre>
         </p>
       </section>
+
+      <!-- Problem 14 -->
+      <section id="problem_14" class="problem">
+        <h2>Problem #14: Field Input Validation</h2>
+        <p>
+          <b>Problem:</b>
+          Write a function to validate form fields for creating a new project (e.g., required fields, valid dates, unique project name).
+        </p>
+        <p>
+          <b>Explanation:</b>
+          <ul>
+            <li>Check that all required fields are present.</li>
+            <li>Dates are valid.</li>
+            <li>Project name is unique.</li>
+          </ul>
+        </p>
+        <p>
+          <b>Input:</b>
+          <pre><code class="language-javascript">const formData = { name: "Project X", startDate: "2024-06-01", endDate: "2024-06-10" };
+      const existingProjects = [ { name: "Project Y" } ];</code></pre>
+        </p>
+        <p>
+          <b>Output:</b>
+          <pre><code class="language-javascript">{ valid: true, errors: [] }</code></pre>
+          Or, if there are errors:<br>
+          <pre><code class="language-javascript">{ valid: false, errors: ["Required field missing", "Name is not unique", "End date before start date"] }</code></pre>
+        </p>
+      </section>
     </div>
     <script src="./index.mjs" type="module"></script>
     <script src="./solutions/problem-1.js"></script>
@@ -417,5 +445,6 @@ const userRole = "editor";</code></pre>
     <script src="./solutions/problem-11.js"></script>
     <script src="./solutions/problem-12.js"></script>
     <script src="./solutions/problem-13.js"></script>
+    <script src="./solutions/problem-14.js"></script>
   </body>
 </html>
