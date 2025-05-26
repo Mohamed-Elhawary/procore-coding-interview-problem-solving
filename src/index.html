@@ -519,6 +519,34 @@ const allowedTypes = [".pdf", ".jpg", ".png"];</code></pre>
           <pre><code class="language-javascript">{ Electrical: 50, Plumbing: 100 }</code></pre>
         </p>
       </section>
+
+      <!-- Problem 18 -->
+      <section id="problem_18" class="problem">
+        <h2>Problem #18: Contact Directory Search</h2>
+        <p>
+          <b>Problem:</b>
+          Implement a fuzzy search on a directory of people (by name, company, or role).
+        </p>
+        <p>
+          <b>Explanation:</b>
+          <ul>
+            <li>Given a search term, return contacts whose name, company, or role includes the term (case-insensitive).</li>
+          </ul>
+        </p>
+        <p>
+          <b>Input:</b>
+          <pre><code class="language-javascript">const contacts = [
+  { name: "Alice", company: "BuildCo", role: "Manager" },
+  { name: "Bob", company: "PlanIt", role: "Engineer" }
+];
+
+const searchTerm = "plan";</code></pre>
+        </p>
+        <p>
+          <b>Output:</b>
+          <pre><code class="language-javascript">[ { name: "Bob", company: "PlanIt", role: "Engineer" } ]</code></pre>
+        </p>
+      </section>
     </div>
     <script src="./index.mjs" type="module"></script>
     <script src="./solutions/problem-1.js"></script>
@@ -538,5 +566,6 @@ const allowedTypes = [".pdf", ".jpg", ".png"];</code></pre>
     <script src="./solutions/problem-15.js"></script>
     <script src="./solutions/problem-16.js"></script>
     <script src="./solutions/problem-17.js"></script>
+    <script src="./solutions/problem-18.js"></script>
   </body>
 </html>
