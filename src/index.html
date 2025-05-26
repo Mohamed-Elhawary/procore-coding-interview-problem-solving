@@ -547,6 +547,37 @@ const searchTerm = "plan";</code></pre>
           <pre><code class="language-javascript">[ { name: "Bob", company: "PlanIt", role: "Engineer" } ]</code></pre>
         </p>
       </section>
+
+      <!-- Problem 19 -->
+      <section id="problem_19" class="problem">
+        <h2>Problem #19: Safety Incident Tracker</h2>
+        <p>
+          <b>Problem:</b>
+          Track safety incidents and produce a report of incidents per month, by severity.
+        </p>
+        <p>
+          <b>Explanation:</b>
+          <ul>
+            <li>Each incident has a <code>date</code> (YYYY-MM-DD) and <code>severity</code>.</li>
+            <li>Return an object: for each month, a count of each severity.</li>
+          </ul>
+        </p>
+        <p>
+          <b>Input:</b>
+          <pre><code class="language-javascript">const incidents = [
+  { date: "2024-06-01", severity: "high" },
+  { date: "2024-06-15", severity: "low" },
+  { date: "2024-07-01", severity: "medium" }
+];</code></pre>
+        </p>
+        <p>
+          <b>Output:</b>
+          <pre><code class="language-javascript">{
+  "2024-06": { high: 1, low: 1 },
+  "2024-07": { medium: 1 }
+}</code></pre>
+        </p>
+      </section>
     </div>
     <script src="./index.mjs" type="module"></script>
     <script src="./solutions/problem-1.js"></script>
@@ -567,5 +598,6 @@ const searchTerm = "plan";</code></pre>
     <script src="./solutions/problem-16.js"></script>
     <script src="./solutions/problem-17.js"></script>
     <script src="./solutions/problem-18.js"></script>
+    <script src="./solutions/problem-19.js"></script>
   </body>
 </html>
