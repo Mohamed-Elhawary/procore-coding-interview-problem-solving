@@ -8,7 +8,7 @@
     <div id="app">
       <h1>Procore Coding Interview - Problem Solving</h1>
       <span class="position-title">Position: Software Engineer II - Frontend</span>
-      <span class="content-title">20 Problems in JavaScript</span>
+      <span class="content-title">20 JavaScript Problems</span>
 
       <!-- Problem 1 -->
       <section id="problem_1" class="problem">
@@ -491,6 +491,34 @@ const allowedTypes = [".pdf", ".jpg", ".png"];</code></pre>
           <pre><code class="language-javascript">[ { name: "plan.pdf" }, { name: "photo.jpg" } ]</code></pre>
         </p>
       </section>
+
+      <!-- Problem 17 -->
+      <section id="problem_17" class="problem">
+        <h2>Problem #17: Punch List Completion Rate</h2>
+        <p>
+          <b>Problem:</b>
+          Given punch list items (each with a completed status), calculate completion percentage per category.
+        </p>
+        <p>
+          <b>Explanation:</b>
+          <ul>
+            <li>Each item has a <code>category</code> and <code>completed</code> boolean.</li>
+            <li>Return completion rate for each category.</li>
+          </ul>
+        </p>
+        <p>
+          <b>Input:</b>
+          <pre><code class="language-javascript">const items = [
+  { category: "Electrical", completed: true },
+  { category: "Electrical", completed: false },
+  { category: "Plumbing", completed: true }
+];</code></pre>
+        </p>
+        <p>
+          <b>Output:</b>
+          <pre><code class="language-javascript">{ Electrical: 50, Plumbing: 100 }</code></pre>
+        </p>
+      </section>
     </div>
     <script src="./index.mjs" type="module"></script>
     <script src="./solutions/problem-1.js"></script>
@@ -509,5 +537,6 @@ const allowedTypes = [".pdf", ".jpg", ".png"];</code></pre>
     <script src="./solutions/problem-14.js"></script>
     <script src="./solutions/problem-15.js"></script>
     <script src="./solutions/problem-16.js"></script>
+    <script src="./solutions/problem-17.js"></script>
   </body>
 </html>
