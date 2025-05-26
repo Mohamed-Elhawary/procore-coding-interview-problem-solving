@@ -578,6 +578,40 @@ const searchTerm = "plan";</code></pre>
 }</code></pre>
         </p>
       </section>
+
+      <!-- Problem 20 -->
+      <section id="problem_20" class="problem">
+        <h2>Problem #20: Daily Crew Attendance Tracker</h2>
+        <p>
+          <b>Problem:</b>
+          Given an array of attendance records for different workers and days, return a summary showing, for each date, how many unique workers were present.
+        </p>
+        <p>
+          <b>Explanation:</b>
+          <ul>
+            <li>Each record includes a worker’s name and a date.</li>
+            <li>Some workers may appear more than once per day (multiple check-ins); only count each worker once per day.</li>
+            <li>Return an object where each key is a date and each value is the count of unique workers present that day.</li>
+          </ul>
+      </p>
+        <p>
+          <b>Input:</b>
+          <pre><code class="language-javascript">const attendance = [
+  { worker: "Alice", date: "2024-06-01" },
+  { worker: "Bob", date: "2024-06-01" },
+  { worker: "Alice", date: "2024-06-01" },
+  { worker: "Charlie", date: "2024-06-02" },
+  { worker: "Alice", date: "2024-06-02" }
+];</code></pre>
+        </p>
+        <p>
+          <b>Output:</b>
+          <pre><code class="language-javascript">{
+  "2024-06-01": 2,
+  "2024-06-02": 2
+}</code></pre>
+        </p>
+      </section>
     </div>
     <script src="./index.mjs" type="module"></script>
     <script src="./solutions/problem-1.js"></script>
@@ -599,5 +633,6 @@ const searchTerm = "plan";</code></pre>
     <script src="./solutions/problem-17.js"></script>
     <script src="./solutions/problem-18.js"></script>
     <script src="./solutions/problem-19.js"></script>
+    <script src="./solutions/problem-20.js"></script>
   </body>
 </html>

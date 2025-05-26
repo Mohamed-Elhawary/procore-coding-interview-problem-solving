@@ -18,6 +18,7 @@ const phases = [
 ];
 
 console.log("Problem #4 Output:", prepareGanttData(phases));
+
 /* 
 [
   {

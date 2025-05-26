@@ -14,5 +14,7 @@ const steps2 = ["approved", "approved"];
 const steps3 = ["approved", "rejected"];
 
 console.log("Problem #6 Output_1:", getApprovalStatus(steps1)); // pending
+
 console.log("Problem #6 Output_2:", getApprovalStatus(steps2)); // approved
+
 console.log("Problem #6 Output_3:", getApprovalStatus(steps3)); // rejected
