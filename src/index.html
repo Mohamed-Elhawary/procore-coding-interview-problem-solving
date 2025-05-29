@@ -8,7 +8,7 @@
     <div id="app">
       <h1>Procore Coding Interview - Problem Solving</h1>
       <span class="position-title">Position: Software Engineer II - Frontend</span>
-      <span class="content-title">20 JavaScript Problems</span>
+      <span class="content-title">21 JavaScript Problems</span>
 
       <!-- Problem 1 -->
       <section id="problem_1" class="problem">
@@ -612,6 +612,42 @@ const searchTerm = "plan";</code></pre>
 }</code></pre>
         </p>
       </section>
+
+      <!-- Problem 21 -->
+      <section id="problem_21" class="problem">
+        <h2>Problem #21: Cheapest Worker Assignment</h2>
+        <p>
+          <b>Problem:</b>
+          Given an array of workers (each with a list of trades they can do and a cost), and an array of required trades, assign to each trade the cheapest available worker who has not already been assigned to another trade. If no worker can do a trade, that trade remains unassigned.
+        </p>
+        <p>
+          <b>Explanation:</b>
+          <ul>
+            <li>For each trade in the <code>trades</code> array:</li>
+            <li>Find all workers who can do the trade and have <b>not</b> been assigned to another trade.</li>
+            <li>Assign the <b>cheapest</b> such worker to the trade.</li>
+            <li>A worker can be assigned only once.</li>
+            <li>If no available worker can do a trade, leave it unassigned.</li>
+            <li>Return and Array of the assigned workers.</li>
+          </ul>
+        </p>
+        <p>
+          <b>Input:</b>
+          <pre><code class="language-javascript">const workers = [
+  { email: "mo@sd.com", trades: ["cement", "bricks"], cost: 60 },
+  { email: "ali@sd.com", trades: ["cutting", "cement"], cost: 80 },
+  { email: "sara@sd.com", trades: ["bricks", "cutting"], cost: 70 }
+];
+
+const trades = ["cement", "bricks", "cutting"];</code></pre>
+        </p>
+        <p>
+          <b>Output:</b>
+          <pre><code class="language-javascript">
+["mo@sd.com", "sara@sd.com", "ali@sd.com"]
+          </code></pre>
+        </p>
+      </section>
     </div>
     <script src="./index.mjs" type="module"></script>
     <script src="./solutions/problem-1.js"></script>
@@ -634,5 +670,6 @@ const searchTerm = "plan";</code></pre>
     <script src="./solutions/problem-18.js"></script>
     <script src="./solutions/problem-19.js"></script>
     <script src="./solutions/problem-20.js"></script>
+    <script src="./solutions/problem-21.js"></script>
   </body>
 </html>
